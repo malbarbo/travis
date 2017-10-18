@@ -1,0 +1,10 @@
+addons:
+  apt:
+    packages:
+      - gcc-multilib
+
+script: |
+  gcc -mx32 x.c
+  ldd a.out
+  file a.out
+  ./a.out
